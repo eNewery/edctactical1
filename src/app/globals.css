@@ -1,0 +1,354 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+/* Imports */
+
+/* Keyframes */
+
+@keyframes appear {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.appear{
+animation: appear 2s both;
+}
+@keyframes disappear {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+.disappear{
+animation: disappear 1s both;
+}
+/* Keyframes */
+
+
+/* RESET CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+cursor: none;
+}
+/* RESET CSS */
+
+/* Html, Body */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Html, Body */
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161f36;
+  background:url(./components/images/background.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+/* Container */
+
+/* Container Main */
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.mainLandingLogo{
+  width: 256px;
+  height: 256px;
+  background: url(./components/images/logo2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+}
+.mainCardContainer{
+  display: flex;
+  justify-content: center;
+}
+.mainContainer .mainCardContainer{
+  font-weight: 100;
+  color: #0f1525;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0.5em 0.5em 1em 0 black;
+}
+.mainCardButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+min-width: 300px;
+background: none;
+border: none;
+box-shadow: inset 0 0 0 0 #0f1525;
+height: 55px;
+transition:1s;
+border-bottom: 5px solid #0f1525;
+}
+.mainCardContainer:hover{
+  background-color: #0f1525 !important;
+  transition: 1s;
+}
+.mainCardContainer:active{
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+.mainCardContainer:hover button {
+box-shadow: inset 0 -60px 0 0 #0f1525;
+transition:1s;
+}
+.mainCardButton button{
+  height: 55px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  width: 100%;
+font-family: 'Victor Mono', monospace;
+font-weight: 500;
+transition:0.3s;
+}
+
+
+/* Container Main */
+
+
+
+/* Home */
+.homeSectionContainer{
+display:flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: 100%;
+}
+.homeBackground{
+  background: url(./components/images/logo2.png);
+  background-size: cover;
+  background-position: center;
+  width: 256px;
+  height: 256px;
+  border-radius: 1em;
+  transition:0.5s;
+}
+
+.homeSection{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height: 100%;
+}
+.headingTitle{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #0f1525;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.headingTitle:hover{
+  background-color: #fff;
+  color: #0f1525;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.headingTitle span{
+  font-size:32px;
+}
+.homeBtn{
+  border: none;
+  padding: 1em;
+  border-radius: 1em;
+  transition:0.3s;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #0f1525;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.homeBtn:hover{
+  background-color: #fff;
+  color: #0f1525;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Home */
+
+
+
+/* Navbar */
+.nav {
+display: flex;
+justify-content: center;
+width: 100%;
+height: 100px;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 1em;
+}
+.navAfterBtn{
+  justify-content: space-between !important;
+}
+.navbarLogo {
+  background: url(./components/images/logo.jpeg);
+  width: 256px;
+  height: 256px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+box-shadow: 0em 0.5em 1em 0 #161f36;
+  top: 5em;
+  border-radius: 50%;
+}
+.navLinks{
+  display: none;
+}
+.navLinksA{
+  display: flex !important;
+justify-content: space-between;
+gap: 1em;
+}
+.navLinksA a{
+  color:#ffffff;
+  font-size: 24px;
+text-decoration: none;
+padding: 0.2em;
+}
+.navLink{
+  font-weight: 100;
+  padding: 0.2em 0.8em 0.2em 0.8em !important;
+  border-bottom: 10px solid #0f1525;
+}
+.navLink:hover{
+  box-shadow: inset 0 0 0.3em 0.3em rgba(0,0,0,0.5);
+}
+/* Navbar */
+
+/* Footer */
+
+.footerContainer{
+  background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+color: white;
+height: 70px;
+text-align: center;
+display: flex;
+padding: 0.5em;
+align-items: center;
+font-size: 20px;
+justify-content: center;
+}
+
+/* Footer */
+
+
+/* MEDIA QUERIES */
+
+@media (max-height: 488px) {
+.navbarLogo{
+  width: 100px !important;
+  height: 100px !important;
+}
+}
+
+/* MEDIA 1280 WIDTH */
+@media (max-width: 1280px) {
+  
+  
+  /* Nav Media 1280 */
+.navbarLogo{
+width: 158px;
+height: 158px;
+top: 1em;
+}
+  /* Nav Media 1280 */
+
+
+
+
+/* Main Media 1280 */
+.mainLandingLogo{
+  width: 158px;
+  height: 158px;
+}
+.mainCardButton{
+height: 40px;   
+}
+.mainCardContainer .mainCardButton{
+    width: 250px;
+    height: 35px;
+}
+.mainCardContainer:hover button{
+  box-shadow: inset 0 -40px 0 0 #0f1525;
+}
+#myButton{
+      font-size:20px;
+}
+/* Main Media 1280 */
+
+
+
+}
+/* MEDIA 1280 */
+
+/* MEDIA 768 WIDTH */
+@media (max-width: 768px) {
+  
+  
+  /* Nav Media 768 */
+  .navbarLogo{
+width: 128px;
+height: 128px;
+  }
+  /* Nav Media 768 */
+
+
+
+/* Main Media 768 */
+  .mainLandingLogo{
+    width: 128px;
+    height: 128px;
+  }
+  .mainCardContainer .mainCardButton{
+width: 200px;
+height: 35px;
+  }
+.mainCardContainer:hover button{
+  box-shadow: inset 0 -40px 0 0 #0f1525;
+}
+#myButton{
+  font-size:16  px;
+}
+/* Main Media 768 */
+
+
+
+
+}
+/* MEDIA 768 */
+
+/* MEDIA QUERIES */
